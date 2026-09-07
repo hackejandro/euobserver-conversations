@@ -1,6 +1,12 @@
 name: Update EUobserver conversations feed
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - '.github/workflows/update-feed.yml'
   schedule:
     - cron: '11,26,41,56 * * * *'
   workflow_dispatch:
