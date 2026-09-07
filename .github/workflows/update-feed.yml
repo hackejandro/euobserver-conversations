@@ -8,7 +8,7 @@ on:
       - 'scripts/**'
       - '.github/workflows/update-feed.yml'
   schedule:
-    - cron: '11,26,41,56 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
